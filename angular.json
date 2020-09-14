@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "azm"
+    }
+  },
+  "defaultProject": "azm",
+  "cli": {
+    "analytics": "fc8de706-4c5b-4fa5-8c01-56fa2fbcec5e"
+  }
 }
