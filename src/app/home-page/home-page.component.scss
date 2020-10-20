@@ -1,0 +1,472 @@
+@font-face {
+    font-family: Jost;
+    src: url("../fonts/Jost.ttf");
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url("../fonts/ProximaNova.ttf");
+}
+
+@font-face {
+    font-family: Jost_bold;
+    src: url("../fonts/Jost_black.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: Montserrat_bold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+.main__background {
+    width: 1440px;
+    height: 900px;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    &__background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        &.background-zombie {
+            width: 1249px;
+            height: 900px;
+            background: url("./../../assets/images/zombie.png") no-repeat;
+        }
+        &.background-red {
+            width: 1440px;
+            height: 900px;
+            background: linear-gradient(286.24deg, #FF0000 0%, rgba(255, 57, 57, 0) 0%), url("./../../assets/images/red_fon.png") no-repeat;
+            mix-blend-mode: screen;
+        }
+        &.background-gradient {
+            width: 1440px;
+            height: 900px;
+            background: url("./../../assets/images/gradient.png") no-repeat;
+            mix-blend-mode: hard-light;
+        }
+        &.background-video {
+            width: 602px;
+            height: 900px;
+            background: url("./../../assets/images/black_fon.png") no-repeat;
+            left: 838px;
+        }
+        &.background-clouds {
+            width: 728.58px;
+            height: 341.29px;
+            background: url("./../../assets/images/clouds.png") no-repeat;
+            mix-blend-mode: luminosity;
+            top: 539px;
+        }
+        &.background-big-fire {
+            position: absolute;
+            width: 331px;
+            height: 280px;
+            left: 0px;
+            top: 0px;
+            background: url("./../../assets/images/big_fire.png") no-repeat;
+            mix-blend-mode: hard-light;
+        }
+        &.background-small-fire {
+            position: absolute;
+            width: 142px;
+            height: 120px;
+            left: 3.11px;
+            top: 50px;
+            background: url("./../../assets/images/small_fire.png") no-repeat;
+            mix-blend-mode: soft-light;
+            transform: rotate(4.35deg);
+        }
+    }
+}
+
+.main__overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.main__header {
+    height: 126px;
+    &__navigation {
+        position: absolute;
+        display: flex;
+        width: 870px;
+        height: 44px;
+        left: 135px;
+        top: 50px;
+        &__item {
+            font-family: Jost;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 0px 13px;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            user-select: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            &.item-logotype {
+                width: 64.22px;
+                height: 44px;
+                background: url("./../../assets/images/GG.png") no-repeat;
+                margin-right: 17.78px;
+                margin-top: -8px;
+            }
+            &.item-donate {
+                width: 170px;
+                height: 44px;
+                &-text {
+                    position: absolute;
+                    left: 743.78px;
+                    top: 2px;
+                }
+                &-rectangle {
+                    position: absolute;
+                    width: 136px;
+                    height: 44px;
+                    top: -9px;
+                    left: 707px;
+                    background: #EF3535;
+                }
+            }
+        }
+    }
+    &__socials {
+        position: absolute;
+        width: 190.17px;
+        height: 50px;
+        left: 1115px;
+        top: 39px;
+        &__label {
+            width: 196px;
+            height: 17px;
+            margin-left: 2px;
+            color: #7D7D7D;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__item {
+            display: flex;
+            width: 190.17px;
+            height: 21px;
+            margin-top: 7px;
+            &.item-discord {
+                width: 23px;
+                height: 17px;
+                background: url("./../../assets/images/discord_icon.png") no-repeat;
+                padding-left: 35px;
+            }
+            &.item-vk {
+                width: 21px;
+                height: 21px;
+                background: url("./../../assets/images/vk_icon.png") no-repeat;
+                padding-left: 36.22px;
+            }
+            &.item-twitter {
+                width: 21.33px;
+                height: 21.33px;
+                background: url("./../../assets/images/twitter_icon.png") no-repeat;
+                padding-left: 35.29px;
+            }
+            &.item-youtube {
+                width: 19.33px;
+                height: 18.67px;
+                background: url("./../../assets/images/youtube_icon.png") no-repeat;
+            }
+        }
+    }
+}
+
+.main__content {
+    position: absolute;
+    width: 1440px;
+    height: 774px;
+}
+
+.index {
+    position: absolute;
+    width: 1440px;
+    height: 774px;
+    // .index__left-side
+    &__left-side {
+        position: absolute;
+        width: 911px;
+        height: 774px;
+    }
+    // .index__preview
+    &__preview {
+        position: absolute;
+        left: 135px;
+        top: 170px;
+        &__hint {
+            font-family: Jost;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__title {
+            width: 672px;
+            height: 110px;
+            padding-top: 10px;
+            font-family: Jost_bold;
+            font-size: 46.7px;
+            line-height: 55px;
+        }
+        &__description {
+            margin-top: 32px;
+            font-family: Jost;
+            font-size: 18px;
+            line-height: 26.5px;
+        }
+    }
+    &__designer {
+        position: absolute;
+        width: 166px;
+        height: 39.84px;
+        left: 717px;
+        top: 733px;
+        &__item {
+            position: absolute;
+            &.item-text {
+                font-family: Montserrat;
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                color: rgb(134, 37, 30);
+                user-select: none;
+            }
+            &.item-icon-b {
+                top: -27.5px;
+                left: 63px;
+                font-family: Montserrat_Bold;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18.6487px;
+                line-height: 23px;
+                color: rgb(134, 37, 30)
+            }
+            &.item-icon-xx {
+                left: 72px;
+                top: -29px;
+                font-family: Montserrat_bold;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18.6487px;
+                line-height: 23px;
+                color: rgb(134, 37, 30);
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    // .index__right-side
+    &__right-side {
+        position: absolute;
+        height: 774px;
+        width: 442px;
+        left: 910px;
+        &__news {
+            position: absolute;
+            width: 264px;
+            height: 60px;
+            top: 50px;
+            left: 265px;
+            background: red;
+            &__item {
+                &.item-icon {
+                    position: absolute;
+                    width: 28.33px;
+                    height: 28.33px;
+                    background: url("./../../assets/images/newsfeed.png");
+                    top: 13px;
+                    left: 14px;
+                }
+                &.item-redRectangle {
+                    width: 60px;
+                    height: 60px;
+                    background-color: #EF3535;
+                }
+                &.item-whiteRectangle {
+                    position: absolute;
+                    width: 205px;
+                    height: 60px;
+                    top: 0px;
+                    left: 61px;
+                    background-color: white;
+                }
+                &.item-slider {
+                    position: absolute;
+                    width: 13.12px;
+                    height: 23.44px;
+                    left: 222px;
+                    top: 18px;
+                    background: url("./../../assets/images/newsfeed_icon.png");
+                    cursor: pointer;
+                }
+                &.item-text {
+                    position: absolute;
+                    width: 97px;
+                    height: 40px;
+                    left: 93px;
+                    top: 11px;
+                    font-family: Jost;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #000000;
+                }
+            }
+        }
+        &__item {
+            &_icon {
+                position: absolute;
+                width: 87.75px;
+                height: 87.75px;
+                background: url("./../../assets/images/start_icon.png");
+                left: 280px;
+                top: 266px;
+                cursor: pointer;
+                user-select: none;
+            }
+            &_text {
+                position: absolute;
+                left: 254px;
+                top: 369px;
+                font-family: Jost;
+                font-size: 18px;
+                line-height: 21px;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.modes {
+    position: absolute;
+    width: 260px;
+    height: 120px;
+    left: 191px;
+    top: 616px;
+    &__count {
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 25px;
+        color: #7D7D7D;
+    }
+    &__about {
+        display: flex;
+        position: absolute;
+        left: -70px;
+        &__item {
+            padding: 21px 20.5px;
+            font-family: Jost;
+            font-size: 18px;
+            line-height: 21px;
+            &.item-zombie {
+                color: #EF3535;
+            }
+        }
+    }
+    &__circle {
+        display: flex;
+        position: absolute;
+        width: 300px;
+        height: 54px;
+        top: 70px;
+        left: -24px;
+        align-items: center;
+        &__item {
+            width: 16px;
+            height: 16px;
+            background: url("./../../assets/images/white_small_eclipse.png") no-repeat;
+            padding: 0px 40px;
+            cursor: pointer;
+            &.item-active-small-eclipse {
+                background: url("./../../assets/images/red_small_eclipse.png") no-repeat;
+            }
+            &.item-active-eclipse {
+                position: absolute;
+                width: 38px;
+                height: 38px;
+                top: 8px;
+                left: 8px;
+                background: url("./../../assets/images/red_eclipse.png") no-repeat;
+            }
+        }
+    }
+}
+
+.main__footer {
+    &__server {
+        position: absolute;
+        width: 705px;
+        height: 120px;
+        top: 780px;
+        background: rgb(181, 44, 41);
+        backdrop-filter: blur(32px);
+        &__online {
+            position: absolute;
+            width: 174px;
+            height: 120px;
+            &__item {
+                white-space: nowrap;
+                margin-left: 44px;
+                margin-top: 32px;
+                font-family: Jost;
+                font-size: 18px;
+                line-height: 9px;
+                color: #FFFFFF;
+                &.item-title {
+                    color: rgb(231, 178, 173)
+                }
+            }
+        }
+        &__info {
+            position: absolute;
+            width: 172px;
+            height: 120px;
+            left: 198px;
+            &__item {
+                font-family: Jost;
+                font-size: 18px;
+                line-height: 8px;
+                margin-top: 33px;
+                color: #FFFFFF;
+                &.item-title {
+                    color: rgb(231, 178, 173)
+                }
+            }
+        }
+        &__start {
+            position: absolute;
+            width: 300px;
+            height: 120px;
+            left: 403px;
+            background: rgb(134, 20, 16);
+            &__item {
+                font-family: Jost_bold;
+                font-size: 24px;
+                line-height: 28px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+}
