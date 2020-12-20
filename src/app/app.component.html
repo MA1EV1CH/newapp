@@ -1,3 +1,29 @@
 <div class="container">
     <router-outlet></router-outlet>
 </div>
+
+<div class="navigation">
+    <div class="fixed-size-new">
+        <div class="navigation-wrapper">
+            <div class="navigation-side">
+                <a class="navigation-side-item item-logotype" [routerLink]="['/']"></a>
+                <a class="navigation-side-item" [routerLink]="['/start']">Как начать играть</a>
+                <a class="navigation-side-item" href="//forum.amazing-zm.ru" target="_blank">Форум</a>
+                <a class="navigation-side-item" [routerLink]="['/info']">Помощь</a>
+                <a class="navigation-side-item" [routerLink]="['/tools']">Предметы</a>
+            </div>
+            <div class="navigation-side">
+                <a class="navigation-side-item item-donate" [routerLink]="['/donate']">Донат</a>
+            </div>
+            <div class="navigation-side side-column">
+                <div class="navigation-side-icons-title">Будь в курсе всех событий –</div>
+                <div class="navigation-side-icons">
+                    <a class="navigation-side-icons-item item-discord" href="//discord.com" target="_blank"></a>
+                    <a class="navigation-side-icons-item item-vk" href="//vk.ru" target="_blank"></a>
+                    <a class="navigation-side-icons-item item-twitter" href="//twitter.com" target="_blank"></a>
+                    <a class="navigation-side-icons-item item-youtube" href="//youtube.com" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
