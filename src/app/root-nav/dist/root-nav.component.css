@@ -1,0 +1,85 @@
+.fixed-size-new {
+  width: 100%;
+  max-width: 1630px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.navigation .navigation-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.navigation .navigation-wrapper .navigation-side {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.navigation .navigation-wrapper .navigation-side.side-column {
+  flex-direction: column;
+}
+.navigation .navigation-wrapper .navigation-side:last-child {
+  margin-right: 0;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-item {
+  font-family: "Jost";
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 26px;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-item.item-logotype {
+  background-image: url("/assets/images/GG.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 64px;
+  min-height: 43px;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-item.item-donate {
+  background-color: #EF3535;
+  padding: 9px 55px;
+  border-radius: 3px;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-item:last-child {
+  margin-right: 0;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons-title {
+  font-size: 14px;
+  color: #7D7D7D;
+  margin-bottom: 15px;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons {
+  display: flex;
+  align-items: center;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 21px;
+  min-height: 21px;
+  margin-right: 35px;
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item.item-discord {
+  background-image: url("/assets/images/discord_icon.png");
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item.item-vk {
+  background-image: url("/assets/images/vk_icon.png");
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item.item-twitter {
+  background-image: url("/assets/images/twitter_icon.png");
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item.item-youtube {
+  background-image: url("/assets/images/youtube_icon.png");
+}
+.navigation .navigation-wrapper .navigation-side .navigation-side-icons .navigation-side-icons-item:last-child {
+  margin-right: 0;
+}

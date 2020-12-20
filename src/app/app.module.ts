@@ -10,6 +10,14 @@ import { InfoPageComponent } from './info-page/info-page.component';
 import { ToolsPageComponent } from './tools-page/tools-page.component';
 import { DonatePageComponent } from './donate-page/donate-page.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RootNavComponent } from './root-nav/root-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 const routes = [
   {
@@ -40,12 +48,20 @@ const routes = [
     StartGamePageComponent,
     InfoPageComponent,
     ToolsPageComponent,
-    DonatePageComponent
+    DonatePageComponent,
+    RootNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
